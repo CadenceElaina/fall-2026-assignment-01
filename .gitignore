@@ -7,3 +7,18 @@ temp/
 # Ignore everything in data/ but keep gradebook.json
 data/*
 !data/gradebook.json
+
+# ─── Private workspace ───────────────────────────────────────────────────────
+# Docs: https://git-scm.com/docs/gitignore
+# A pattern with a trailing slash matches a DIRECTORY (and everything in it).
+# Nothing under private/ is ever staged, committed, or pushed to GitHub.
+private/
+
+# ─── Environment variables ───────────────────────────────────────────────────
+# .env holds machine-local config, so it is never committed.
+.env
+# .env.* covers variants like .env.local, .env.production.
+.env.*
+# A leading "!" NEGATES an earlier pattern (re-includes the file).
+# .env.example IS committed: it documents which keys exist, with no real values.
+!.env.example

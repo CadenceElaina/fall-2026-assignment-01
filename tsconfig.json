@@ -17,5 +17,6 @@
     "skipLibCheck": true,
     "moduleResolution": "node16",
     "types": ["node"]
-  }
+  },
+  "exclude": ["node_modules", "dist", "private"]
 }
